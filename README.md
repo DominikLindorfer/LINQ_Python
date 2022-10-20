@@ -14,7 +14,7 @@ To access the LINQ functions an iterable needs to be wrapped by the Enumerable
 ```python
 from py_linq import Enumerable
 clist = [0,1,2,3,4,5]
-Enumerable(clist).order_by(lambda x: x).take(2).where(lambda x: x.x > 0).to_list() 
+Enumerable(clist).order_by(lambda x: x).take(2).where(lambda x: x > 0).to_list() 
 ```
 
 ## Documentation ##
