@@ -896,6 +896,9 @@ class Grouping(Enumerable):
     def add(self, item):
         self._iterable._data.append(item)
 
+    def get_data(self):
+        # result = Enumerable(clist).group_by(key=lambda x: x.name).select(lambda g: g.get_data()).to_list()
+        return self._iterable._data
 
 class SortedEnumerable(Enumerable):
     def __init__(self, enumerable, key_funcs):
