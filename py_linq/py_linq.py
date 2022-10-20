@@ -103,7 +103,7 @@ class Enumerable(object):
         """
         for i, e in enumerate(self):
             if e == element:
-                return 
+                return i
 
     def last_index_of(self, element):
         """

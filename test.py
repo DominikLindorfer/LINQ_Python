@@ -56,3 +56,7 @@ students.select(lambda x: x['marks']).to_list()
 
 Enumerable(clist).select(lambda x: x.y).where(lambda y: y > 3).to_list()
 
+
+Enumerable([80, 90, 25, 65, 80]).index_of(80)
+Enumerable([80, 90, 25, 65, 80]).last_index_of(80)
+
